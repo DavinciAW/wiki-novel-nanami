@@ -1,0 +1,156 @@
+/* Dasar Tema Gelap */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+.main-title {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Grid Karakter */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.char-card {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    transition: transform 0.2s;
+}
+
+.char-card:active {
+    transform: scale(0.95);
+}
+
+/* Container untuk gambar & icon */
+.image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.char-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-element {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    z-index: 2;
+}
+
+.icon-weapon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    z-index: 2;
+}
+
+.char-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Styling Detail Karakter */
+.char-header {
+    position: relative;
+    text-align: center;
+}
+.full-portrait {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+.char-title-overlay {
+    background: linear-gradient(transparent, #121212);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+.basic-info-box {
+    display: flex;
+    justify-content: space-around;
+    background: #1e1e1e;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+.mini-icon { width: 24px; height: 24px; vertical-align: middle; }
+
+/* Tab sistem */
+.tab-headers { display: flex; border-bottom: 2px solid #333; }
+.tab-btn {
+    flex: 1; padding: 10px; background: none; border: none;
+    color: #888; cursor: pointer; font-weight: bold;
+}
+.tab-btn.active { color: #fff; border-bottom: 3px solid #6200ee; }
+.tab-content { display: none; padding: 15px; }
+.tab-content.active { display: block; }
+
+/* Collapsible */
+.collapsible {
+    background-color: #1e1e1e; color: white; cursor: pointer;
+    padding: 15px; width: 100%; border: none; text-align: left;
+    outline: none; font-size: 16px; border-bottom: 1px solid #333;
+}
+.content { padding: 0 18px; display: none; overflow: hidden; background-color: #121212; }
+
+/* Skill Cards */
+.skill-card {
+    background: #1e1e1e; margin: 15px; padding: 15px; border-radius: 8px;
+}
+.skill-name { font-size: 1.2rem; font-weight: bold; margin-bottom: 2px; }
+.skill-type { color: #aaa; font-size: 0.9rem; margin-bottom: 10px; }
+.skill-tabs { display: flex; gap: 5px; margin-bottom: 10px; }
+.s-tab-btn {
+    background: #333; color: #fff; border: none; padding: 5px 10px;
+    border-radius: 4px; cursor: pointer; font-size: 0.8rem;
+}
+.s-tab-btn.active { background: #6200ee; }
+.s-content { display: none; }
+.s-content.active { display: block; }
+
+/* Table Scaling */
+.table-scroll { overflow-x: auto; width: 100%; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; white-space: nowrap; }
+th, td { border: 1px solid #444; padding: 8px; text-align: center; font-size: 0.9rem; }
+th { background: #333; }
+
+/* Memory */
+.memory-grid { padding: 15px; }
+.memory-card { background: #1e1e1e; padding: 15px; margin-bottom: 10px; border-left: 4px solid #6200ee; }
+.mem-title { font-weight: bold; color: #bb86fc; }
