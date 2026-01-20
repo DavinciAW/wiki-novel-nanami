@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana - Nanami Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <section class="char-header">
+        <div class="portrait-container">
+            <img src="assets/char_nana_full.jpg" alt="Nana Portrait" class="full-portrait">
+            <div class="char-title-overlay">
+                <h1>Nana</h1>
+                <p class="sub-title">"Gadis dari Langit Biru"</p>
+            </div>
+        </div>
+
+        <div class="basic-info-box">
+            <div class="info-item">
+                <span>Rarity</span>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="info-item">
+                <span>Element</span>
+                <img src="assets/icon_wind.png" class="mini-icon" alt="Wind">
+            </div>
+            <div class="info-item">
+                <span>Weapon</span>
+                <img src="assets/icon_sword.png" class="mini-icon" alt="Sword">
+            </div>
+        </div>
+    </section>
+
+    <section class="tab-section">
+        <div class="tab-headers">
+            <button class="tab-btn active" onclick="openTab(event, 'Bio')">Bio</button>
+            <button class="tab-btn" onclick="openTab(event, 'Keluarga')">Keluarga</button>
+        </div>
+
+        <div id="Bio" class="tab-content active">
+            <ul class="bio-list">
+                <li><strong>Nama:</strong> Nana</li>
+                <li><strong>Umur:</strong> 19 Tahun</li>
+                <li><strong>Birthday:</strong> ???</li>
+                <li><strong>Asal:</strong> Bumi</li>
+                <li><strong>Faksi:</strong> Ignica</li>
+                <li><strong>Pekerjaan:</strong> 
+                    <ul>
+                        <li>Petualang</li>
+                        <li>Karyawan Mealhaven</li>
+                    </ul>
+                </li>
+                <li><strong>Afiliasi:</strong>
+                    <ul>
+                        <li>Kota Ignica</li>
+                        <li>Pusat Petualang</li>
+                        <li>Restoran Mealhaven</li>
+                    </ul>
+                </li>
+                <li><strong>First Appearance:</strong> Volume 1 Bab 1</li>
+                <li><strong>Obtainment:</strong> Story Utama</li>
+                <li><strong>Memory Obtainment:</strong> Story Utama</li>
+            </ul>
+        </div>
+
+        <div id="Keluarga" class="tab-content">
+            <p>Placeholder: Daftar keluarga Nana akan muncul di sini.</p>
+        </div>
+    </section>
+
+    <section class="lore-section">
+        <button class="collapsible">Personality</button>
+        <div class="content">
+            <p>Nana memiliki sifat ramah dan baik hati, terutama kepada teman dan sahabatnya. Meski kadang terseret konflik, Nana tetap gigih dan sabar dalam menghadapi konflik tersebut. Ia juga memiliki kemampuan akademik yang cukup cerdas karena sebelumnya ia telah berkuliah selama tiga semester di Bumi.</p>
+        </div>
+
+        <button class="collapsible">Appearance</button>
+        <div class="content">
+            <p>Nana memiliki rambut berwarna hijau muda. Pakaiannya seringkali blouse sederhana dengan rompi kulit jika ia sedang berpetualang. <br><br> Saat bekerja di restoran Mealhaven, ia memakai seragam karyawan.</p>
+        </div>
+
+        <button class="collapsible">Introduksi</button>
+        <div class="content">
+            <p>"Halo, Aku Nana"</p>
+        </div>
+
+        <button class="collapsible">Character Stories</button>
+        <div class="content">
+            <button class="collapsible sub-coll">Story 1</button>
+            <div class="content">
+                <p>Isi cerita story 1 di sini...</p>
+            </div>
+            <button class="collapsible sub-coll">Story 2</button>
+            <div class="content">
+                <p>Isi cerita story 2 di sini...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2>Skills</h2>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <img src="assets/icon_atk.png" class="skill-icon">
+                <div>
+                    <div class="skill-name">Swift Slash</div>
+                    <div class="skill-type">Normal Attack</div>
+                </div>
+            </div>
+            
+            <div class="skill-tabs">
+                <button class="s-tab-btn active" onclick="skillTab(this, 'desc')">Deskripsi</button>
+                <button class="s-tab-btn" onclick="skillTab(this, 'note')">Catatan</button>
+                <button class="s-tab-btn" onclick="skillTab(this, 'scal')">Scaling</button>
+            </div>
+
+            <div class="skill-body">
+                <div class="s-content desc active">
+                    <p><strong>Basic Attack:</strong> Nana melakukan hingga 4 serangan.</p>
+                    <p><strong>Charged Attack:</strong> ???</p>
+                    <p><strong>Plunge Attack:</strong> ???</p>
+                </div>
+                <div class="s-content note">
+                    <ul>
+                        <li>Placeholder catatan skill</li>
+                    </ul>
+                </div>
+                <div class="s-content scal">
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>1</th><th>2</th><th>3</th><th>4</th><th>...13</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DMG Tahap 1</td>
+                                    <td>43.3%</td><td>47.5%</td><td>52.1%</td><td>...</td><td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>DMG Tahap 2</td>
+                                    <td>51.2%</td><td>54.7%</td><td>58%</td><td>...</td><td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>DMG Charged</td>
+                                    <td>21.3%x5</td><td>23.7%x5</td><td>25.6%x5</td><td>...</td><td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>Stamina</td>
+                                    <td colspan="5">20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card passive-card">
+            <div class="skill-name">Light Hands</div>
+            <div class="skill-type">Passive Talent 1</div>
+            <p><strong>Dapat diunlock setelah Limit Break 1</strong></p>
+            <p>Setelah menggunakan Wind Deflect, Nana mendapatkan efek Light Hands selama 5 detik...</p>
+        </div>
+
+        <div class="skill-card passive-card">
+            <div class="skill-name">Breeze Intuition</div>
+            <div class="skill-type">Speciality</div>
+            <p>Nana dapat memperlihatkan Speciality Item seluruh negara di mini-map...</p>
+        </div>
+    </section>
+
+    <section class="memory-section">
+        <h2>Memory</h2>
+        <div class="memory-grid">
+            <div class="memory-card">
+                <div class="mem-title">Memory 1: Strong Winds</div>
+                <p>Meningkatkan 18% Wind Damage Bonus.</p>
+            </div>
+            <div class="memory-card">
+                <div class="mem-title">Memory 2</div>
+                <p>Placeholder</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
