@@ -118,7 +118,8 @@ header {
 }
 
 .sub-title {
-    margin: 5px 0 0 0;
+    display: block;
+    margin-top: 8px;
     font-style: italic;
     color: #bbb;
 }
