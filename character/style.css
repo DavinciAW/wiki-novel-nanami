@@ -112,7 +112,7 @@ header {
 }
 
 .char-title-overlay h1 {
-    margin: 0;
+    margin: 0 0 6px 0;
     font-size: 2.2rem;
     color: #ffffff;
 }
