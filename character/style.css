@@ -127,13 +127,28 @@ header {
 /* Beri sedikit jarak pada Kotak Info */
 .basic-info-box {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     background: #1e1e1e;
     padding: 15px;
-    margin: 10px 15px 20px 15px; /* Menambah margin agar lebih rapi */
+    margin: 10px 15px 20px 15px;
     border-radius: 8px;
     border: 1px solid #333;
 }
+
+.basic-info-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.basic-info-title {
+    text-align: center;
+    font-style: italic;
+    color: #bbb;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
 .mini-icon { width: 24px; height: 24px; vertical-align: middle; }
 
 /* Tab sistem */
