@@ -28,7 +28,7 @@
             </div>
             <div class="info-item">
                 <span>Weapon</span>
-                <img src="assets/icon_sword.png" class="mini-icon" alt="Sword">
+                <img src="assets/icon_daggers.png" class="mini-icon" alt="Daggers">
             </div>
         </div>
     </section>
@@ -104,7 +104,7 @@
 
         <div class="skill-card">
             <div class="skill-header">
-                <img src="assets/icon_atk.png" class="skill-icon">
+                <img src="assets/icon_nana_atk.png" class="skill-icon">
                 <div>
                     <div class="skill-name">Swift Slash</div>
                     <div class="skill-type">Normal Attack</div>
@@ -134,7 +134,7 @@
                             <thead>
                                 <tr>
                                     <th>Level</th>
-                                    <th>1</th><th>2</th><th>3</th><th>4</th><th>...13</th>
+                                    <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -161,14 +161,145 @@
             </div>
         </div>
 
+        <div class="skill-card">
+            <div class="skill-header">
+                <img src="assets/icon_nana_skill.png" class="skill-icon">
+                <div>
+                    <div id="wind-deflect" class="skill-name">Wind Deflect</div>
+                    <div class="skill-type">Skill</div>
+                </div>
+            </div>
+            
+            <div class="skill-tabs">
+                <button class="s-tab-btn active" onclick="skillTab(this, 'desc')">Deskripsi</button>
+                <button class="s-tab-btn" onclick="skillTab(this, 'note')">Catatan</button>
+                <button class="s-tab-btn" onclick="skillTab(this, 'scal')">Scaling</button>
+            </div>
+
+            <div class="skill-body">
+                <div class="s-content desc active">
+                    <p>Nana mengucapkan mantra yang baru ia pelajari dari secarik kertas pemberian sang Penjaga saat ia direinkarnasi.
+                    <p><u>Tekan:</u> Nana menghempaskan semua musuh di depannya. Memberikan Wind DMG AOE.</p>
+                    <p><u>Tahan:</u> Nana mengangkat kedua tangannya ke depan untuk menciptakan perisai Wind Deflect yang akan menghalang seluruh serangan musuh.</p>
+                    <p>Saat HP Shield habis, atau saat tombol skill dilepas, atau saat durasi habis, Nana akan menghempaskan musuh di depannya, memberikan Wind DMG AOE.</p>
+                </div>
+                <div class="s-content note">
+                    <ul>
+                        <li>Placeholder catatan skill</li>
+                    </ul>
+                </div>
+                <div class="s-content scal">
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jumlah Perisai</td>
+                                    <td>43.3%</td><td>47.5%</td><td>52.1%</td><td>...</td><td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>DMG Skill</td>
+                                    <td>51.2%</td><td>54.7%</td><td>58%</td><td>...</td><td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>Durasi Shield</td>
+                                    <td colspan="5">2 detik</td>
+                                </tr>
+                                <tr>
+                                    <td>Cooldown Tekan</td>
+                                    <td colspan="5">8 detik</td>
+                                </tr>
+                                <tr>
+                                    <td>Cooldown Tahan</td>
+                                    <td colspan="5">12 detik</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <img src="assets/icon_nana_ulti.png" class="skill-icon">
+                <div>
+                    <div id="random-winds" class="skill-name">Random Winds</div>
+                    <div class="skill-type">Ultimate</div>
+                </div>
+            </div>
+            
+            <div class="skill-tabs">
+                <button class="s-tab-btn active" onclick="skillTab(this, 'desc')">Deskripsi</button>
+                <button class="s-tab-btn" onclick="skillTab(this, 'note')">Catatan</button>
+                <button class="s-tab-btn" onclick="skillTab(this, 'scal')">Scaling</button>
+            </div>
+
+            <div class="skill-body">
+                <div class="s-content desc active">
+                    <p>Nana melancarkan tebasan belati yang telah terinfusi sihir <a href="#wind-deflect">Wind Deflect</a>-nya sangat cepat namun tidak beraturan, sebuah cerminan dirinya yang belum pernah bertarung, namun tetap ingin melindungi teman-temannya. Memberikan <span style="color: turquoise;">Wind DMG AOE</span>.</p>
+                </div>
+                <div class="s-content note">
+                    <ul>
+                        <li>Placeholder catatan skill</li>
+                    </ul>
+                </div>
+                <div class="s-content scal">
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DMG per Tebasan</td>
+                                    <td>43.3%</td><td>47.5%</td><td>52.1%</td><td>...</td><td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>Jumlah Tebasan</td>
+                                    <td colspan="5">10</td>
+                                </tr>
+                                <tr>
+                                    <td>Cooldown</td>
+                                    <td colspan="5">16 detik</td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Cost</td>
+                                    <td colspan="5">60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>1
+
         <div class="skill-card passive-card">
+            <img src="assets/icon_nana_pass1.png" class="skill-icon">
             <div class="skill-name">Light Hands</div>
             <div class="skill-type">Passive Talent 1</div>
             <p><strong>Dapat diunlock setelah Limit Break 1</strong></p>
-            <p>Setelah menggunakan Wind Deflect, Nana mendapatkan efek Light Hands selama 5 detik...</p>
+            <p>Setelah menggunakan <a href="#wind-deflect">Wind Deflect</a>, Nana mendapatkan efek Light Hands selama 5 detik. Dalam durasi ini, Charged Attack selanjutnya tidak akan mengonsumsi stamina dan memberikan Wind Damage AOE sebesar 75% ATK Nana. Dapat dipicu setiap 15 detik.</p>
         </div>
 
         <div class="skill-card passive-card">
+            <img src="assets/icon_nana_pass2.png" class="skill-icon">
+            <div class="skill-name">No Time to Think!</div>
+            <div class="skill-type">Passive Talent 2</div>
+            <p><strong>Dapat diunlock setelah Limit Break 4</strong></p>
+            <p>Setelah menggunakan <a href="#random-winds">Random Winds</a>, Nana mendapatkan efek Improved Blade selama 8 detik. Selama durasi, Basic Attack Nana akan memulihkan 1.5 Energy setiap mengenai musuh. Cara ini dapat dipicu setiap 0.3 detik dan sampai 5 kali, lalu menghapus efek.</p>
+        </div>
+
+        <div class="skill-card passive-card">
+            <img src="assets/icon_nana_spec.png" class="skill-icon">
             <div class="skill-name">Breeze Intuition</div>
             <div class="skill-type">Speciality</div>
             <p>Nana dapat memperlihatkan Speciality Item seluruh negara di mini-map...</p>
@@ -185,6 +316,22 @@
             <div class="memory-card">
                 <div class="mem-title">Memory 2</div>
                 <p>Placeholder</p>
+            </div>
+            <div class="memory-card">
+                <div class="mem-title">Memory 3: Strong Winds</div>
+                <p>Meningkatkan 18% Wind Damage Bonus.</p>
+            </div>
+            <div class="memory-card">
+                <div class="mem-title">Memory 4: Strong Winds</div>
+                <p>Meningkatkan 18% Wind Damage Bonus.</p>
+            </div>
+            <div class="memory-card">
+                <div class="mem-title">Memory 5: Strong Winds</div>
+                <p>Meningkatkan 18% Wind Damage Bonus.</p>
+            </div>
+            <div class="memory-card">
+                <div class="mem-title">Memory 6: Strong Winds</div>
+                <p>Meningkatkan 18% Wind Damage Bonus.</p>
             </div>
         </div>
     </section>
