@@ -84,28 +84,52 @@ header {
 }
 
 /* Styling Detail Karakter */
+/* Perbaikan pada Header */
 .char-header {
-    position: relative;
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Memastikan elemen menumpuk dari atas ke bawah */
+    background-color: #121212;
 }
+
+.portrait-container {
+    position: relative;
+    width: 100%;
+    line-height: 0; /* Menghilangkan celah kecil di bawah gambar */
+}
+
 .full-portrait {
     width: 100%;
-    max-height: 500px;
+    max-height: 80vh; /* Agar gambar tidak terlalu panjang di HP */
     object-fit: cover;
 }
+
+/* Teks Nama Sekarang Berada di Bawah Gambar, Bukan Menindih */
 .char-title-overlay {
-    background: linear-gradient(transparent, #121212);
-    position: absolute;
-    bottom: 0;
+    background: #121212; /* Warna solid agar teks jelas */
+    padding: 15px 0 5px 0;
+    text-align: center;
     width: 100%;
-    padding: 20px 0;
 }
+
+.char-title-overlay h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.sub-title {
+    margin: 5px 0 0 0;
+    font-style: italic;
+    color: #bbb;
+}
+
+/* Beri sedikit jarak pada Kotak Info */
 .basic-info-box {
     display: flex;
     justify-content: space-around;
     background: #1e1e1e;
     padding: 15px;
-    margin: 10px;
+    margin: 10px 15px 20px 15px; /* Menambah margin agar lebih rapi */
     border-radius: 8px;
     border: 1px solid #333;
 }
